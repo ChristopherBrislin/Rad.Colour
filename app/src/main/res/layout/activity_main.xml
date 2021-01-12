@@ -9,18 +9,16 @@
     android:id="@+id/main_layout"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_ionic_ios_color_palette"
         android:id="@+id/logo"
-
+        android:contentDescription="@string/logo_description"
 
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/app_title"
-
         />
 
     <TextView
@@ -30,7 +28,6 @@
         android:id="@+id/app_title"
         android:layout_margin="@dimen/title_margin"
         android:textSize="@dimen/title_size"
-
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -43,8 +40,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-
-
     android:id="@+id/control_layout"
 
     app:layout_constraintRight_toRightOf="parent"
@@ -59,14 +54,16 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_email"
         android:id="@+id/email_entry"
-
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionDone"
+        android:autofillHints="email@"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,8 +73,8 @@
         app:layout_constraintTop_toBottomOf="@id/email_entry"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,6 +84,7 @@
         android:text="@string/submit_btn"
         android:onClick="onSubmit"
         />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
