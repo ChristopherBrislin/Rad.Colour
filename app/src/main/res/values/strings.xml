@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Rad.Colour</string>
     <string name="enter_email">Enter Email Address</string>
+    <string name="not_valid_email">Please enter a valid email address</string>
+    <string name="valid_email">Valid email!</string>
+    <string name="submit_btn">Pick Colours!</string>
 </resources>

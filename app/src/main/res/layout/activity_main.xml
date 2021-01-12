@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/main_layout"
     tools:context=".MainActivity">
 
 
@@ -16,22 +19,40 @@
 
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/email_entry"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/app_title"
+
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:layout_margin="10dp"
-        android:textSize="30dp"
-        android:textStyle="bold"
+        android:id="@+id/app_title"
+        android:layout_margin="@dimen/title_margin"
+        android:textSize="@dimen/title_size"
 
-        app:layout_constraintTop_toBottomOf="@id/logo"
+
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+
+
+    android:id="@+id/control_layout"
+
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/app_title"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -46,5 +67,26 @@
         app:layout_constraintRight_toRightOf="parent"
 
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valid_email"
+        android:text="@string/not_valid_email"
+
+        app:layout_constraintTop_toBottomOf="@id/email_entry"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pick_colour"
+
+        android:visibility="invisible"
+        android:text="@string/submit_btn"
+        android:onClick="onSubmit"
+        />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
