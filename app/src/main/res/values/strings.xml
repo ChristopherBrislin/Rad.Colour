@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Rad.Colour</string>
+    <string name="enter_email">Enter Email Address</string>
 </resources>
