@@ -78,8 +78,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     public boolean isValidEmail(String email){
@@ -102,10 +100,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-
-
-
-
 
 }

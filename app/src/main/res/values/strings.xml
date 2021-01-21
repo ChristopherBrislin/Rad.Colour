@@ -1,8 +1,18 @@
 <resources>
     <string name="app_name">Rad.Colour</string>
     <string name="enter_email">Enter Email Address</string>
-    <string name="not_valid_email">Please enter a valid email address</string>
+    <string name="not_valid_email">Enter a valid email address</string>
     <string name="valid_email">Valid email!</string>
     <string name="submit_btn">Pick Colours!</string>
     <string name="logo_description">RadColour Logo</string>
+    <string-array name="code_type">
+        <item>RGB</item>
+        <item>Hex</item>
+        <item>HSV</item>
+    </string-array>
+    <string name="email_subject">Your Rad.Colour codes have arrived!</string>
+    <string name="email_body">Here are your colour codes:\n\n RGB: %s \n Hex: %s \n HSV: %s \n\n
+    Thanks for using Rad.Colour!</string>
+    <string name="toast_success">Copied to clipboard.</string>
+    <string name="clip_label">Code</string>
 </resources>
