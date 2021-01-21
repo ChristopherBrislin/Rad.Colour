@@ -20,4 +20,13 @@
         <item name="windowNoTitle">true</item>
 
     </style>
+    <style name="Progress_red">
+        <item name="colorAccent">@color/red</item>
+    </style>
+    <style name="Progress_green">
+        <item name="colorAccent">@color/green</item>
+    </style>
+    <style name="Progress_blue">
+        <item name="colorAccent">@color/blue</item>
+    </style>
 </resources>

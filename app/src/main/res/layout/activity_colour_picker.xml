@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="true"
-    android:focusableInTouchMode="true"
+
+
     android:id="@+id/background"
 
     tools:context=".ColourPicker">
@@ -18,6 +18,8 @@
         android:id="@+id/back_button"
         android:clickable="true"
         android:onClick="goBack"
+        android:focusable="true"
+        android:contentDescription="@string/back_button"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -77,6 +79,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/clipboard"
             android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/clip_desc"
             android:onClick="addToClipboard"
             android:src="@drawable/icon_awesome_clipboard"
             android:padding="10dp"
@@ -95,9 +99,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:max="255"
-        android:min="0"
-        android:progressTint="@color/red"
-        android:progressBackgroundTint="@color/red"
+
+        android:theme="@style/Progress_red"
         android:padding="10dp"
 
 
@@ -110,9 +113,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:max="255"
-        android:min="0"
-        android:progressTint="@color/green"
-        android:progressBackgroundTint="@color/green"
+
+        android:theme="@style/Progress_green"
         android:padding="10dp"
 
 
@@ -125,9 +127,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:max="255"
-        android:min="0"
-        android:progressTint="@color/blue"
-        android:progressBackgroundTint="@color/blue"
+
+        android:theme="@style/Progress_blue"
         android:padding="10dp"
 
         android:id="@+id/blue_slider"
@@ -140,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:id="@+id/send_codes"
-        android:text="Send Codes!"
+        android:text="@string/send_codes"
         android:onClick="sendEmail"
         />
 

@@ -15,4 +15,7 @@
     Thanks for using Rad.Colour!</string>
     <string name="toast_success">Copied to clipboard.</string>
     <string name="clip_label">Code</string>
+    <string name="back_button">Back Button</string>
+    <string name="clip_desc">Clipboard Icon</string>
+    <string name="send_codes">Send Codes!</string>
 </resources>
